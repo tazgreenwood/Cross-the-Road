@@ -1,0 +1,106 @@
+body {
+  background: #403F5B;
+  margin:0;
+  overflow-x: hidden;
+}
+
+#isaac {
+  height: 65px;
+  position: absolute;
+  transition: all .25s;
+  left:0;
+  top: 0;
+}
+
+#start {
+  background: #926E5B;
+  width: 100%;
+  height: 81px;
+  border-bottom: 5px outset #767D97;
+}
+
+#finish {
+  background: #2E892E;
+  width: 100%;
+  height: 200px;
+  border-top: 8px outset #767D97;
+}
+
+#road {
+  background: #403F5B;
+  padding-top: 5px;
+}
+
+.car {
+  background-image: url('orangecar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 65px;
+  margin: 8px 0;
+  position: relative;
+  left: -10vw;
+  animation-name: orangecar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.car.redtruck {
+  background-image: url('redtruck.png');
+  position: relative;
+  left:100vw;
+  animation-name: redtruck;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.car.greytruck {
+  background-image: url('greytruck.png');
+  position: relative;
+  left: -10vw;
+  animation-name: greytruck;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.car.green {
+  background-image: url('greencar.png');
+  left:100vw;
+  animation-name: greencar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.curb {
+  height: 91px;
+  background: #926E5B;
+  border-top: 5px outset #767D97;
+  border-bottom: 5px outset #767D97;
+}
+
+hr {
+  margin: 0;
+  border-color: #767D97;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+@keyframes redtruck {
+  100% {left: -15vw;}
+}
+
+@keyframes orangecar {
+  100% {left: 100vw;}
+}
+
+@keyframes greytruck {
+  100% {left: 100vw;}
+}
+
+@keyframes greencar {
+  100% {left: -12vw;}
+}
